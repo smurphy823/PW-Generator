@@ -1,0 +1,16 @@
+.content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    padding: 20px;
+    width: 50%;
+}
+
+#display{
+    width: 50%;
+}
+
+#slider{
+    width: 50%;
+}
+
