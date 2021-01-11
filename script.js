@@ -1,3 +1,5 @@
+const { doc } = require("prettier");
+
 //generating random password
 function generate(){
 
@@ -19,4 +21,25 @@ function generate(){
 
     //add pw to generated pw section
     document.getElementById("lastNums").innerHTML += password + "<br/>";
+}
+
+//length display of 25
+document.getElementById("length").innerHTML = "Length: 25";
+
+document.getElementById("slider").oninput = function(){
+    if(document.getElementById("slider").value > 0){
+        document.getElementById("length").innerHTML = "Length" + document.getElementById("slider").value;
+    }
+    else{ 
+        document.getElementById("length").innerHTML = "Length: 1";
+    }
+}
+
+//copy clip board function
+function copyPassword(){
+    document.getElementById("display").select();
+
+    document.execCommand("copy");
+
+    alert("Password copied successfully");
 }
