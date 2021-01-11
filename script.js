@@ -1,5 +1,3 @@
-const { doc } = require("prettier");
-
 //generating random password
 function generate(){
 
@@ -20,11 +18,11 @@ function generate(){
     document.getElementById("display").value = password;
 
     //add pw to generated pw section
-    document.getElementById("lastNums").innerHTML += password + "<br/>";
+    document.getElementById("lastPasswords").innerHTML += password + "<br/>";
 }
 
-//length display of 25
-document.getElementById("length").innerHTML = "Length: 25";
+//length display of 20
+document.getElementById("length").innerHTML = "Length: 20";
 
 document.getElementById("slider").oninput = function(){
     if(document.getElementById("slider").value > 0){
