@@ -18,7 +18,7 @@ function generate(){
     document.getElementById("display").value = password;
 
     //add pw to generated pw section
-    document.getElementById("lastPasswords").innerHTML += password + "<br/>";
+    document.getElementById("lastNums").innerHTML += password + "<br/>";
 }
 
 //length display of 20
